@@ -2,20 +2,24 @@
 //  Persistence.swift
 //  Focus Timer
 //
-//  Created by Feiyue Zhang on 8/14/22.
+//  Created by Feiyue Zhang on 3/12/21.
 //
 
 import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
-
+    
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newGoal = Goal(context: viewContext)
+            newGoal.timestamp = Date()
+            newGoal.numOfSessions = 4
+            newGoal.lengthOfFocus = 50
+            newGoal.lengthOfRelax = 10
+            newGoal.completedFocus = 0
         }
         do {
             try viewContext.save()

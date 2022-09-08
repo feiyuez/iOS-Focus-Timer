@@ -16,6 +16,13 @@
 		E0EDA41928A8F82700C4FF2F /* Focus_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA41828A8F82700C4FF2F /* Focus_TimerTests.swift */; };
 		E0EDA42328A8F82700C4FF2F /* Focus_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA42228A8F82700C4FF2F /* Focus_TimerUITests.swift */; };
 		E0EDA42528A8F82700C4FF2F /* Focus_TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA42428A8F82700C4FF2F /* Focus_TimerUITestsLaunchTests.swift */; };
+		E0EDA43428A8F88300C4FF2F /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43328A8F88300C4FF2F /* TimerModel.swift */; };
+		E0EDA43828A8F94F00C4FF2F /* GoalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43728A8F94F00C4FF2F /* GoalSheet.swift */; };
+		E0EDA43A28A8F97800C4FF2F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43928A8F97800C4FF2F /* StartView.swift */; };
+		E0EDA43C28A8F99800C4FF2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43B28A8F99800C4FF2F /* MainView.swift */; };
+		E0EDA43E28A8FA3600C4FF2F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43D28A8FA3500C4FF2F /* ProfileView.swift */; };
+		E0EDA44028A8FA4800C4FF2F /* GoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA43F28A8FA4800C4FF2F /* GoalRow.swift */; };
+		E0EDA44228A8FA5B00C4FF2F /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDA44128A8FA5B00C4FF2F /* GoalList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		E0EDA41E28A8F82700C4FF2F /* Focus TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Focus TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EDA42228A8F82700C4FF2F /* Focus_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_TimerUITests.swift; sourceTree = "<group>"; };
 		E0EDA42428A8F82700C4FF2F /* Focus_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0EDA43328A8F88300C4FF2F /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		E0EDA43728A8F94F00C4FF2F /* GoalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSheet.swift; sourceTree = "<group>"; };
+		E0EDA43928A8F97800C4FF2F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		E0EDA43B28A8F99800C4FF2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E0EDA43D28A8FA3500C4FF2F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E0EDA43F28A8FA4800C4FF2F /* GoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRow.swift; sourceTree = "<group>"; };
+		E0EDA44128A8FA5B00C4FF2F /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +112,9 @@
 		E0EDA40128A8F82600C4FF2F /* Focus Timer */ = {
 			isa = PBXGroup;
 			children = (
+				E0EDA43228A8F86F00C4FF2F /* View */,
+				E0EDA43128A8F86A00C4FF2F /* Model */,
 				E0EDA40228A8F82600C4FF2F /* Focus_TimerApp.swift */,
-				E0EDA40428A8F82600C4FF2F /* ContentView.swift */,
 				E0EDA40628A8F82700C4FF2F /* Assets.xcassets */,
 				E0EDA40B28A8F82700C4FF2F /* Persistence.swift */,
 				E0EDA40D28A8F82700C4FF2F /* Focus_Timer.xcdatamodeld */,
@@ -131,6 +146,44 @@
 				E0EDA42428A8F82700C4FF2F /* Focus_TimerUITestsLaunchTests.swift */,
 			);
 			path = "Focus TimerUITests";
+			sourceTree = "<group>";
+		};
+		E0EDA43128A8F86A00C4FF2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDA43328A8F88300C4FF2F /* TimerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0EDA43228A8F86F00C4FF2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDA43628A8F8BA00C4FF2F /* Main */,
+				E0EDA43528A8F8B100C4FF2F /* Profile */,
+				E0EDA40428A8F82600C4FF2F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0EDA43528A8F8B100C4FF2F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDA43D28A8FA3500C4FF2F /* ProfileView.swift */,
+				E0EDA43F28A8FA4800C4FF2F /* GoalRow.swift */,
+				E0EDA44128A8FA5B00C4FF2F /* GoalList.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E0EDA43628A8F8BA00C4FF2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDA43728A8F94F00C4FF2F /* GoalSheet.swift */,
+				E0EDA43928A8F97800C4FF2F /* StartView.swift */,
+				E0EDA43B28A8F99800C4FF2F /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0EDA40F28A8F82700C4FF2F /* Focus_Timer.xcdatamodeld in Sources */,
+				E0EDA44028A8FA4800C4FF2F /* GoalRow.swift in Sources */,
+				E0EDA43E28A8FA3600C4FF2F /* ProfileView.swift in Sources */,
 				E0EDA40C28A8F82700C4FF2F /* Persistence.swift in Sources */,
+				E0EDA43C28A8F99800C4FF2F /* MainView.swift in Sources */,
+				E0EDA43828A8F94F00C4FF2F /* GoalSheet.swift in Sources */,
+				E0EDA44228A8FA5B00C4FF2F /* GoalList.swift in Sources */,
+				E0EDA43428A8F88300C4FF2F /* TimerModel.swift in Sources */,
 				E0EDA40528A8F82600C4FF2F /* ContentView.swift in Sources */,
 				E0EDA40328A8F82600C4FF2F /* Focus_TimerApp.swift in Sources */,
+				E0EDA43A28A8F97800C4FF2F /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Focus Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = DV5GZ43A95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,6 +514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Focus Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = DV5GZ43A95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
